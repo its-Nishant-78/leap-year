@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <form method="post">
+        <label for="date1">Enter Date1:</label>
+        <input type="number" id="date1" name="date1">
+        <label for="month1">Enter Month1:</label>
+        <input type="number" id="month1" name="month1">
+        <label for="year1">Enter Year1:</label>
+        <input type="number" id="year1" name="year1">
+        <label for="date2">Enter Date2:</label>
+        <input type="number" id="date2" name="date2">
+        <label for="month2">Enter Month2:</label>
+        <input type="number" id="month2" name="month2">
+        <label for="year2">Enter Year2:</label>
+        <input type="number" id="year2" name="year2">
+        <input type="submit" value="Calculate">
+    </form>
+    {%if difference is not none%}
+    <h1>The difference is {{difference}}</h1>
+    {%endif%}
+</body>
+
+</html>
